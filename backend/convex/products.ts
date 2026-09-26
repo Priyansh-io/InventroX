@@ -65,3 +65,12 @@ export const searchProducts = query({
     return [];
   },
 });
+export const listProducts = query({
+  args: {},
+
+  handler: async (ctx) => {
+    return await ctx.db
+      .query("products")
+      .collect();
+  },
+});
