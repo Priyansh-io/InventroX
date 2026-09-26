@@ -9,6 +9,7 @@
  */
 
 import type * as inventory from "../inventory.js";
+import type * as invoices from "../invoices.js";
 import type * as products from "../products.js";
 
 import type {
@@ -19,6 +20,7 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   inventory: typeof inventory;
+  invoices: typeof invoices;
   products: typeof products;
 }>;
 
